@@ -1,39 +1,75 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import { Container } from 'react-bootstrap';
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import { Container, Row, Col } from "react-bootstrap";
 
-const AddMfDetails = () => 
-<Container fluid="md">
+const AddMfDetails = () => (
+  <div>
+    <h1 className="page-header-style">Add your SIP details!!</h1>
+    <Container className="form-container-style">
+      <Form>
+        <Form.Group
+          as={Row}
+          controlId="formAMCName"
+          className="form-group-style"
+        >
+          <Form.Label column sm="2">
+            AMC
+          </Form.Label>
+          <Col sm="10">
+            <Form.Control type="text" placeholder="Enter AMC name" />
+          </Col>
+        </Form.Group>
 
-<h1>Add your SIP details!!</h1>
+        <Form.Group
+          as={Row}
+          controlId="formSipName"
+          className="form-group-style"
+        >
+          <Form.Label column sm="2">
+            SIP Name
+          </Form.Label>
+          <Col sm="10">
+            <Form.Control type="text" placeholder="Enter mf name" />
+          </Col>
+        </Form.Group>
 
-  <Form>
-    <Form.Group controlId="formSipName">
-      <Form.Label>SIP Name</Form.Label>
-      <Form.Control type="text" placeholder="Enter mf name" />
-    </Form.Group>
+        <Form.Group
+          as={Row}
+          controlId="formMFCategory"
+          className="form-group-style"
+        >
+          <Form.Label column sm="2">
+            MF category
+          </Form.Label>
+          <Col sm="10">
+            <Form.Control as="select">
+              <option value="large-cap">Large Cap</option>
+              <option value="multi_cap">Multi Cap</option>
+              <option value="flexi_cap">Flexi Cap</option>
+              <option value="mid_cap">Mid Cap</option>
+              <option value="small_cap">Small Cap</option>
+            </Form.Control>
+          </Col>
+        </Form.Group>
+        <Form.Group
+          as={Row}
+          controlId="formSipAmount"
+          className="form-group-style"
+        >
+          <Form.Label column sm="2">
+            SIP Amount
+          </Form.Label>
+          <Col sm="10">
+            <Form.Control type="number" placeholder="Enter SIP amount" />
+          </Col>
+        </Form.Group>
 
-    <select class="form-select" aria-label="Default select example">
-        <option selected>MF Caps</option>
-		<option value="large-cap">Large Cap</option>
-		<option value="multi_cap">Multi Cap</option>
-		<option value="flexi_cap">Flexi Cap</option>
-		<option value="mid_cap">Mid Cap</option>
-        <option value="small_cap">Small Cap</option>
-	</select>
-    <br/>
-
-    <Form.Group controlId="formSipAmount">
-      <Form.Label>SIP Amount</Form.Label>
-      <Form.Control type="number" placeholder="Enter SIP amount" />
-    </Form.Group>
-
-    <Button variant="primary" type="submit">
-      Submit
-    </Button>
-  </Form>
-  </Container>
-
-
+        <Button className="buttonStyle" type="submit">
+          Add
+        </Button>
+      </Form>
+    </Container>
+  </div>
+);
 
 export default AddMfDetails;

@@ -4,6 +4,7 @@ import './index.css';
 import AddMfDetails from './mf/add-details';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/basic.css';
 
 ReactDOM.render(
   <React.StrictMode>

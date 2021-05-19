@@ -1,0 +1,62 @@
+.form-container-style {
+  background-color: rgb(183, 218, 206);
+  width: 70%;
+  height: 800px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 6px 7px 23px 5px rgb(183, 218, 206);
+  border-radius: 13px;
+}
+
+.page-header-style {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 38px;
+  letter-spacing: 1px;
+  word-spacing: 2.8px;
+  color: #296a69;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  margin: 40px;
+  text-align: center;
+}
+
+/* .form-background {
+    background-color: teal
+} */
+.buttonStyle {
+  color: rgb(211, 228, 222);
+  font-size: 25px;
+  line-height: 25px;
+  padding: 9px;
+  border-radius: 13px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right,
+    rgb(56, 109, 91) 0%,
+    rgb(106, 153, 137) 50%,
+    rgb(56, 109, 91) 100%
+  );
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(56, 109, 91);
+  margin:0 auto;
+  display:block;
+  position: relative;
+}
+.myButton:hover {
+  background: #05e97e;
+}
+.myButton:active {
+  background: #224e3d;
+}
+
+.form-group-style {
+   padding: 20px 20px 20px 20px;
+  }
