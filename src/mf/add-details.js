@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import { Container, Row, Col } from "react-bootstrap";
 
 const AddMfDetails = () => (
-  <div>
+  <div className="default-background">
     <h1 className="page-header-style">Add your SIP details!!</h1>
     <Container className="form-container-style">
       <Form>

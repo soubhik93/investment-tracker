@@ -46,8 +46,8 @@
   );
   box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
   border: 2px solid rgb(56, 109, 91);
-  margin:0 auto;
-  display:block;
+  margin: 0 auto;
+  display: block;
   position: relative;
 }
 .myButton:hover {
@@ -58,5 +58,17 @@
 }
 
 .form-group-style {
-   padding: 20px 20px 20px 20px;
-  }
+  padding: 20px 20px 20px 20px;
+}
+
+.default-background {
+  background-image: url("../images/base_image.jpg");
+  background-size: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
